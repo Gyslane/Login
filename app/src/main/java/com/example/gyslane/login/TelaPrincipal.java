@@ -34,8 +34,8 @@ public class TelaPrincipal extends AppCompatActivity {
         TextView inserirImagem, inserirTexto;
         ImageButton img;
 
-        inserirImagem = (TextView)findViewById(R.id.inserirImagem);
-        inserirTexto = (TextView)findViewById(R.id.inserirTexto);
+        /*inserirImagem = (TextView)findViewById(R.id.inserirImagem);
+        inserirTexto = (TextView)findViewById(R.id.inserirTexto);*/
 
         BottomNavigationView bottomNavigationView =(BottomNavigationView)findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
