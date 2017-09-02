@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BFFF"
+    android:gravity="center">
+    <!--tools:context="com.example.config.lucas.myapplication.MainActivity"
+
+    Comandos que manuseiam cada tag -->
+
+    <Button
+        android:id="@+id/brEdition"
+        android:layout_width="320dp"
+        android:layout_height="56dp"
+        android:text="Altera Dados"
+        tools:layout_editor_absoluteY="81dp"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <Button
+        android:id="@+id/brRegister"
+        android:layout_width="320dp"
+        android:layout_height="61dp"
+        android:text="Veiculos Cadastrados"
+        tools:layout_editor_absoluteY="175dp"
+        app:layout_constraintRight_toRightOf="@+id/brEdition"
+        app:layout_constraintLeft_toLeftOf="@+id/brEdition" />
+
+    <Button
+        android:id="@+id/brDelete"
+        android:layout_width="317dp"
+        android:layout_height="60dp"
+        android:text="Apagar Conta"
+        tools:layout_editor_absoluteY="269dp"
+        app:layout_constraintRight_toRightOf="@+id/brRegister"
+        app:layout_constraintLeft_toLeftOf="@+id/brRegister"
+        app:layout_constraintHorizontal_bias="0.666" />
+
+    <Button
+        android:id="@+id/brExit"
+        android:layout_width="318dp"
+        android:layout_height="59dp"
+        android:text="Sair"
+        tools:layout_editor_absoluteY="359dp"
+        app:layout_constraintRight_toRightOf="@+id/brDelete"
+        app:layout_constraintLeft_toLeftOf="@+id/brDelete"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+
+</android.support.constraint.ConstraintLayout>
