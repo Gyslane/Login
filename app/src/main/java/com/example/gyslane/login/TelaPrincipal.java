@@ -119,7 +119,11 @@ public class TelaPrincipal extends AppCompatActivity {
 
                 return novoBmp;
             }
+            public void clickMyButton(View view){
+
+            }
 
 
         }
+
 
