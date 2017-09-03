@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:icon="@drawable/ic_configuracao"
+        android:title="@string/title_dashboard"
+        android:id="@+id/action_configuracao"
+        android:enabled="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/title_home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_notification"
+        android:enabled="true"
+        android:icon="@drawable/ic_notification"
+        android:title="@string/title_notifications"
+        app:showAsAction="ifRoom" />
+
+</menu>

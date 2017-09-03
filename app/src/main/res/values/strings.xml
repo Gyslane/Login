@@ -9,6 +9,7 @@
     <string name="title_activity_tela_principal">TelaPrincipal</string>
     <string name="title_activity_tela_principal1">Drive Mensager</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_dashboard">Configuração</string>
+    <string name="title_notifications">Notificações</string>
+    <string name="congiguracao">configuracao</string>
 </resources>
