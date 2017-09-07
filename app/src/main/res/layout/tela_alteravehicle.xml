@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:ems="10"
+        android:gravity="center"
+        android:text="Tipo"
+        android:textSize="29sp" />
+
+    <RadioButton
+        android:id="@+id/radio_car"
+        android:layout_width="167dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:text="Carro" />
+
+    <RadioButton
+        android:id="@+id/radio_moto"
+        android:layout_width="167dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:text="Moto" />
+
+    <EditText
+        android:id="@+id/edit_placa"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Placa" />
+
+    <EditText
+        android:id="@+id/edit_model"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Modelo" />
+
+    <Button
+        android:id="@+id/bt_cadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:text="Cadastrar" />
+
+    <Button
+        android:id="@+id/bt_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:text="Cancelar" />
+
+</LinearLayout>
