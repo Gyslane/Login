@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.gyslane.login.TelaCadastro">
+    tools:context="com.example.gyslane.login.TelaCadastro"
+    android:background="@drawable/fundo_padrao">
 
     <EditText
         android:id="@+id/cadastroNome"
@@ -13,7 +14,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Nome Completo"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"/>
 
     <EditText
         android:id="@+id/cadastroEmail"
@@ -21,7 +24,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"/>
 
     <EditText
         android:id="@+id/cadastroCelular"
@@ -29,7 +34,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Celular"
-        android:inputType="phone" />
+        android:inputType="phone"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"/>
 
     <EditText
         android:id="@+id/cadastroSenha"
@@ -37,7 +44,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Senha"
-        android:inputType="numberPassword" />
+        android:inputType="numberPassword"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"/>
 
     <EditText
         android:id="@+id/cadastroConfirmarSenha"
@@ -45,7 +54,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Confirmar Senha"
-        android:inputType="numberPassword" />
+        android:inputType="numberPassword"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"/>
 
     <TextView
         android:id="@+id/cadastroVeiculo"
@@ -54,19 +65,27 @@
         android:textSize="20sp"
         android:padding="12dp"
         android:forceHasOverlappingRendering="false"
-        android:text="Veículo" />
+        android:text="Veículo"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"/>
 
     <RadioButton
         android:id="@+id/cadastroCarro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Carro" />
+        android:hint="Carro"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"
+        android:buttonTint="#DD2C00"/>
 
     <RadioButton
         android:id="@+id/cadastroMoto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Moto" />
+        android:hint="Moto"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"
+        android:buttonTint="#DD2C00"/>
 
     <EditText
         android:id="@+id/cadastroPlaca"
@@ -74,7 +93,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Placa"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"/>
 
     <EditText
         android:id="@+id/cadastroModelo"
@@ -82,18 +103,27 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Modelo"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"/>
 
     <Button
         android:id="@+id/btCadastrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cadastrar" />
+        android:text="Cadastrar"
+        android:background="@drawable/button_cadastrar"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/btCancelar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cancelar" />
+        android:text="Cancelar"
+        android:background="@drawable/button_cadastrar"/>
 
 </LinearLayout>
