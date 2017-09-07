@@ -12,6 +12,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -34,6 +35,8 @@ public class TelaPrincipal extends AppCompatActivity {
         TextView inserirImagem, inserirTexto;
         ImageButton img;
 
+        //btConfig = (Button)findViewById(R.id.btConfig);
+
         /*inserirImagem = (TextView)findViewById(R.id.inserirImagem);
         inserirTexto = (TextView)findViewById(R.id.inserirTexto);*/
 
@@ -55,7 +58,14 @@ public class TelaPrincipal extends AppCompatActivity {
                 return true;
 
             }
-        });
+
+               /* btConfig.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent abreTelaPrincipal = new Intent(TelaCadastro.this,TelaPrincipal.class);
+                        startActivity(abreTelaPrincipal);
+                    }*/
+                });
 
         img = (ImageButton) findViewById(R.id.imagemCamera);
         img.setOnClickListener(new View.OnClickListener() {

@@ -30,7 +30,7 @@ public class TelaAltera extends AppCompatActivity {
         //brExit.setOnClickListener(new View.OnClickListener(){
         //@Override
         //public void onClick(View v){
-        //  Intent abreTelaLogin = new Intent(MainActivity.this,TelaLogin.class);
+        //  Intent abreTelaLogin = new Intent(TelaConfig.this,TelaLogin.class);
         //startActivity(abreTelaLogin);
         //}
         //});

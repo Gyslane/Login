@@ -10,7 +10,7 @@ import android.widget.Button;
  * Created by lucas on 01/09/2017.
  */
 
-public class MainActivity extends AppCompatActivity {
+public class TelaConfig extends AppCompatActivity {
     Button brEdition, brRegister;
     Button brDelete, brExit;
 
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         brEdition.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent abreTelaAltera = new Intent(MainActivity.this, TelaAltera.class);
+                Intent abreTelaAltera = new Intent(TelaConfig.this, TelaAltera.class);
                 startActivity(abreTelaAltera);
             }
         });
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         brRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent abreTelaVeiculo = new Intent(MainActivity.this, TelaVeiculo.class);
+                Intent abreTelaVeiculo = new Intent(TelaConfig.this, TelaVeiculo.class);
                 startActivity(abreTelaVeiculo);
             }
         });
@@ -47,14 +47,14 @@ public class MainActivity extends AppCompatActivity {
         brDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent abreTelaApagar = new Intent(MainActivity.this, TelaApagar.class);
+                Intent abreTelaApagar = new Intent(TelaConfig.this, TelaApagar.class);
                 startActivity(abreTelaApagar);
             }
         });
         //brExit.setOnClickListener(new View.OnClickListener(){
         //@Override
         //public void onClick(View v){
-        //  Intent abreTelaLogin = new Intent(MainActivity.this,TelaLogin.class);
+        //  Intent abreTelaLogin = new Intent(TelaConfig.this,TelaLogin.class);
         //startActivity(abreTelaLogin);
         //}
         //});
