@@ -39,7 +39,9 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintVertical_bias="0.498" />
+        app:layout_constraintVertical_bias="0.498"
+        android:background="@drawable/style_button"
+        />
 
     <ImageButton
         android:id="@+id/imagemDigitar"
@@ -47,7 +49,7 @@
         android:layout_height="150dp"
         android:layout_marginEnd="6dp"
         android:layout_marginRight="-8dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -55,7 +57,9 @@
         app:srcCompat="@android:drawable/editbox_background"
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        tools:layout_constraintTop_creator="1"
+        android:background="@drawable/style_button"
+        />
 
 
 
