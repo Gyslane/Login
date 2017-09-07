@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#00BFFF"
+    android:background="@drawable/fundo"
     android:gravity="center"
     tools:context="com.example.gyslane.login.TelaLogin">
 
@@ -15,7 +15,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Email"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColor="@color/colorFontLogin"
+        android:textColorHint="@color/colorFontLogin"/>
 
     <EditText
         android:id="@+id/loginSenha"
@@ -23,16 +25,22 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Senha"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"/>
 
     <Button
         android:id="@+id/btLogar"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="Logar" />
+        android:text="Logar"
+        android:background="@drawable/botton_border"
+        android:shadowColor="#00E676"
+        />
 
     <TextView
         android:id="@+id/txtCadastro"
+        android:textSize="15sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
