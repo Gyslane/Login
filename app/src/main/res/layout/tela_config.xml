@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00BFFF"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/fundo_padrao">
 
     <!--Comandos que manuseiam cada tag -->
 
@@ -18,6 +18,11 @@
         tools:layout_editor_absoluteX="32dp"
         tools:layout_editor_absoluteY="81dp" />
 
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0"/>
+
     <Button
         android:id="@+id/brRegister"
         android:layout_width="320dp"
@@ -26,6 +31,11 @@
         tools:layout_editor_absoluteY="175dp"
         app:layout_constraintRight_toRightOf="@+id/brEdition"
         app:layout_constraintLeft_toLeftOf="@+id/brEdition" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0"/>
 
     <Button
         android:id="@+id/brDelete"
@@ -37,6 +47,11 @@
         app:layout_constraintLeft_toLeftOf="@+id/brRegister"
         app:layout_constraintHorizontal_bias="0.666" />
 
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0"/>
+
     <Button
         android:id="@+id/brExit"
         android:layout_width="318dp"
@@ -46,5 +61,10 @@
         app:layout_constraintRight_toRightOf="@+id/brDelete"
         app:layout_constraintLeft_toLeftOf="@+id/brDelete"
         app:layout_constraintHorizontal_bias="0.0" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0"/>
 
 </LinearLayout>

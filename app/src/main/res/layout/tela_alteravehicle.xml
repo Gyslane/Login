@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="@drawable/fundo_padrao">
 
     <TextView
         android:id="@+id/textView"
@@ -13,21 +14,29 @@
         android:ems="10"
         android:gravity="center"
         android:text="Tipo"
-        android:textSize="29sp" />
+        android:textSize="29sp"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"/>
 
     <RadioButton
         android:id="@+id/radio_car"
         android:layout_width="167dp"
         android:layout_height="0dp"
         android:layout_weight="0.09"
-        android:text="Carro" />
+        android:text="Carro"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"
+        android:buttonTint="#DD2C00"/>
 
     <RadioButton
         android:id="@+id/radio_moto"
         android:layout_width="167dp"
         android:layout_height="0dp"
         android:layout_weight="0.09"
-        android:text="Moto" />
+        android:text="Moto"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"
+        android:buttonTint="#DD2C00"/>
 
     <EditText
         android:id="@+id/edit_placa"
@@ -36,7 +45,9 @@
         android:layout_weight="0.09"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Placa" />
+        android:hint="Placa"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"/>
 
     <EditText
         android:id="@+id/edit_model"
@@ -45,7 +56,9 @@
         android:layout_weight="0.09"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Modelo" />
+        android:hint="Modelo"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"/>
 
     <Button
         android:id="@+id/bt_cadastrar"
@@ -53,6 +66,11 @@
         android:layout_height="0dp"
         android:layout_weight="0.09"
         android:text="Cadastrar" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0"/>
 
     <Button
         android:id="@+id/bt_cancel"

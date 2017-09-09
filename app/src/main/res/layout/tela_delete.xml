@@ -3,7 +3,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="@drawable/fundo_padrao">
 
     <TextView
         android:id="@+id/entrada"
@@ -12,21 +13,26 @@
         android:layout_weight="0.13"
         android:gravity="center"
         android:text="Realmente deseja apagar sua conta?"
-        android:textSize="29sp" />
+        android:textSize="29sp"
+        android:textColor="@color/colorFontLogin" />
 
     <RadioButton
         android:id="@+id/yes"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.13"
-        android:text="Sim" />
+        android:text="Sim"
+        android:textColor="@color/colorFontLogin"
+        android:buttonTint="#DD2C00" />
 
     <RadioButton
         android:id="@+id/not"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.13"
-        android:text="Não" />
+        android:text="Não"
+        android:textColor="@color/colorFontLogin"
+        android:buttonTint="#DD2C00" />
 
     <Button
         android:id="@+id/excluir"
@@ -34,6 +40,11 @@
         android:layout_height="0dp"
         android:layout_weight="0.13"
         android:text="Excluir" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0"/>
 
     <Button
         android:id="@+id/exit"
