@@ -4,9 +4,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-feature android:name="android.hardware.camera"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -15,39 +17,44 @@
         android:roundIcon="@mipmap/ic_messenger_drive"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".TelaAbertura"
-                  android:label="Messenger Driver">
+        <activity
+            android:name=".TelaAbertura"
+            android:label="Messenger Driver">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TelaLogin"
-                  android:label="Login">
-        <intent-filter>
-            <action android:name="com.example.gyslane.login.TelaLogin" />
-            <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter>
-        </activity>
+        <activity
+            android:name=".TelaLogin"
+            android:label="Login">
+            <intent-filter>
+                <action android:name="com.example.gyslane.login.TelaLogin" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".TelaCadastro"
             android:label="Cadastro">
             <intent-filter>
                 <action android:name="com.example.gyslane.login.TelaPrincipal" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            </activity>
-
+        </activity>
         <activity
             android:name=".TelaPrincipal"
             android:label="Principal">
             <intent-filter>
                 <action android:name="com.example.gyslane.login.TelaPrincipal" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".TelaDigitar" />
+        <activity android:name=".TelaDados"></activity>
     </application>
+
 </manifest>

@@ -33,12 +33,22 @@ public class TelaPrincipal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_principal);
         TextView inserirImagem, inserirTexto;
-        ImageButton img;
+        ImageButton img, imagemDigitar;
 
         //btConfig = (Button)findViewById(R.id.btConfig);
 
         /*inserirImagem = (TextView)findViewById(R.id.inserirImagem);
         inserirTexto = (TextView)findViewById(R.id.inserirTexto);*/
+
+        imagemDigitar = (ImageButton)findViewById(R.id.imagemDigitar);
+
+        imagemDigitar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent abreTelaDigitar = new Intent(TelaPrincipal.this,TelaDigitar.class);
+                startActivity(abreTelaDigitar);
+            }
+        });
 
         BottomNavigationView bottomNavigationView =(BottomNavigationView)findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
