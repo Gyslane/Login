@@ -9,5 +9,6 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:textColor="#FFFFFF"
+        android:background="#FFFF"
         />
 </LinearLayout>

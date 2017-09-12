@@ -35,7 +35,7 @@
         android:buttonTint="#DD2C00" />
 
     <Button
-        android:id="@+id/excluir"
+        android:id="@+id/btExcluir"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.13"
@@ -47,7 +47,7 @@
         android:layout_weight="0"/>
 
     <Button
-        android:id="@+id/exit"
+        android:id="@+id/btExit"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.13"

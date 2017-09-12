@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class TelaDados extends AppCompatActivity {
 
     Button btEnviar, btCancelar;
-    private String[] mansagens = new String[]{"Farol ligado", "Vidro aberto", "Colidi no seu veículo", "Roubo de carro", "Veículo obstruindo passagem",
+    private String[] mansagens = new String[]{"Selecione...", "Farol ligado", "Vidro aberto", "Colidi no seu veículo", "Roubo de carro", "Veículo obstruindo passagem",
     "Colidi na sua moto", "Roubo de moto"};
 
     private Spinner sp;

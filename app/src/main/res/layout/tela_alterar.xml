@@ -2,14 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_padrao">
+
     <EditText
         android:id="@+id/nmalt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Nome Completo" />
+        android:hint="Nome Completo"
+        android:textColor="@color/colorFontLogin"/>
 
     <EditText
         android:id="@+id/emailalt"
@@ -17,7 +20,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:hint="E-mail"/>
+        android:hint="E-mail"
+        android:textColor="@color/colorFontLogin"/>
 
     <EditText
         android:id="@+id/passwordalt"
@@ -25,7 +29,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Senha"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColor="@color/colorFontLogin"/>
 
     <EditText
         android:id="@+id/confirmdalt"
@@ -33,7 +38,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Confirmação de Senha"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColor="@color/colorFontLogin"/>
 
     <EditText
         android:id="@+id/phonealt"
@@ -41,7 +47,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="phone"
-        android:hint="Celular"/>
+        android:hint="Celular"
+        android:textColor="@color/colorFontLogin"/>
 
     <Button
         android:id="@+id/alterar"
@@ -49,6 +56,11 @@
         android:layout_height="wrap_content"
         android:onClick="clickCancelar"
         android:text="Alterar" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0"/>
 
     <Button
         android:id="@+id/exit"

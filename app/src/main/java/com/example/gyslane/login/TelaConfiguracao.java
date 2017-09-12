@@ -36,7 +36,7 @@ public class TelaConfiguracao extends AppCompatActivity {
         brRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent abreTelaVeiculo = new Intent(TelaConfiguracao.this, TelaVeiculo.class);
+                Intent abreTelaVeiculo = new Intent(TelaConfiguracao.this, TelaVeiculo1.class);
                 startActivity(abreTelaVeiculo);
             }
         });
