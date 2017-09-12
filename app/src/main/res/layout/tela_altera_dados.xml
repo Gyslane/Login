@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gyslane.login.TelaAlteraDados"
+    android:background="@drawable/fundo_padrao">
+
+    <EditText
+        android:id="@+id/nmalt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nome Completo"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"/>
+
+    <EditText
+        android:id="@+id/emailalt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="E-mail"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"/>
+
+    <EditText
+        android:id="@+id/passwordalt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="numberPassword"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"/>
+
+    <EditText
+        android:id="@+id/confirmdalt"
+        android:layout_width="398dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirmação de Senha"
+        android:inputType="numberPassword"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"/>
+
+    <EditText
+        android:id="@+id/phonealt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Celular"
+        android:textColorHint="@color/colorFontLogin"
+        android:textColor="@color/colorFontLogin"/>
+
+    <Button
+        android:id="@+id/alterar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickCancelar"
+        android:text="Alterar"
+        android:background="@drawable/button_cadastrar"/>
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_weight="0"/>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:background="@drawable/button_cadastrar"/>
+
+</LinearLayout>

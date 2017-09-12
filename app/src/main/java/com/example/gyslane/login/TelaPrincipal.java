@@ -56,7 +56,9 @@ public class TelaPrincipal extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.action_configuracao:
-                        Toast.makeText(TelaPrincipal.this, "Configuração", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(TelaPrincipal.this, "Configurações", Toast.LENGTH_SHORT).show();
+                        Intent abreTelaConfiguracao = new Intent(TelaPrincipal.this,TelaConfiguracao.class);
+                        startActivity(abreTelaConfiguracao);
                         break;
                     case R.id.action_home:
                         Toast.makeText(TelaPrincipal.this, "Página principal", Toast.LENGTH_SHORT).show();

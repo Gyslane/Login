@@ -57,5 +57,12 @@ public class TelaCadastro extends AppCompatActivity {
             myTitleText.setText("NEW TITLE");
         }
         */
+        btCancelar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent abreTelaLogin = new Intent(TelaCadastro.this, TelaLogin.class);
+                startActivity(abreTelaLogin);
+            }
+        });
     }
 }

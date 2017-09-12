@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/fundo_padrao"
+    tools:context="com.example.gyslane.login.TelaApagarConta"
+    >
+
+    <TextView
+        android:id="@+id/entrada"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.13"
+        android:gravity="center"
+        android:text="Realmente deseja apagar sua conta?"
+        android:textSize="29sp"
+        android:textColor="@color/colorFontLogin" />
+
+    <RadioButton
+        android:id="@+id/yes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.13"
+        android:text="Sim"
+        android:textColor="@color/colorFontLogin"
+        android:buttonTint="#DD2C00" />
+
+    <RadioButton
+        android:id="@+id/not"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.13"
+        android:text="Não"
+        android:textColor="@color/colorFontLogin"
+        android:buttonTint="#DD2C00" />
+
+    <Button
+        android:id="@+id/excluir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Excluir"
+        android:background="@drawable/button_cadastrar" />
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_weight="0"/>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sair"
+        android:background="@drawable/button_cadastrar" />
+
+</LinearLayout>
