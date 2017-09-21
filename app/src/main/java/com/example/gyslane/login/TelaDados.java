@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class TelaDados extends AppCompatActivity {
 
     Button btEnviar, btCancelar;
-    private String[] mansagens = new String[]{"Selecione...", "Farol ligado", "Vidro aberto", "Colidi no seu veículo", "Roubo de carro", "Veículo obstruindo passagem",
+    private String[] mansagens = new String[]{"* Selecione ", "Farol ligado", "Vidro aberto", "Colidi no seu veículo", "Roubo de carro", "Veículo obstruindo passagem",
     "Colidi na sua moto", "Roubo de moto"};
 
     private Spinner sp;
@@ -36,6 +36,26 @@ public class TelaDados extends AppCompatActivity {
             public void onClick(View v) {
                 Intent abreTelaDados = new Intent(TelaDados.this,TelaPrincipal.class);
                 startActivity(abreTelaDados);
+            }
+        });
+
+        btEnviar = (Button)findViewById(R.id.btEnviar);
+
+        btEnviar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (sp.getSelectedItem() == "* Selecione ")
+                {
+                    Toast.makeText(TelaDados.this, "Selecione uma mensagem!", Toast.LENGTH_SHORT).show();
+                    Intent abreTelaDados = new Intent(TelaDados.this,TelaDados.class);
+                    startActivity(abreTelaDados);
+
+                }else if(sp.getSelectedItem() != "* Selecione "){
+                    Toast.makeText(TelaDados.this, "Mensagem enviada com sucesso!", Toast.LENGTH_SHORT).show();
+                    Intent abreTelaDados = new Intent(TelaDados.this,TelaPrincipal.class);
+                    startActivity(abreTelaDados);
+                }
+
             }
         });
 
@@ -76,7 +96,9 @@ public class TelaDados extends AppCompatActivity {
         long id = sp.getSelectedItemId();
         int posicao = sp.getSelectedItemPosition();
 
-        Toast.makeText(this, "Mensagem: "+nome+" -> Id: "+id+"-> Posicao", Toast.LENGTH_SHORT).show();
+
+        //Toast.makeText(this, "Mensagem: "+nome+" -> Id: "+id+"-> Posicao", Toast.LENGTH_SHORT).show();
+
     }
 
     public void ok(View view){
