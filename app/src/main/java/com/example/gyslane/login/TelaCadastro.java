@@ -7,7 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class TelaCadastro extends AppCompatActivity {
 
@@ -15,48 +17,37 @@ public class TelaCadastro extends AppCompatActivity {
     TextView cadastroVeiculo;
     RadioButton cadastroCarro, cadastroMoto;
     Button btCadastrar, btCancelar;
+    RadioGroup group;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_cadastro);
 
-        cadastroNome = (EditText)findViewById(R.id.cadastroNome);
-        cadastroEmail = (EditText)findViewById(R.id.cadastroEmail);
-        cadastroCelular = (EditText)findViewById(R.id.cadastroCelular);
-        cadastroSenha = (EditText)findViewById(R.id.cadastroSenha);
-        cadastroConfirmarSenha = (EditText)findViewById(R.id.cadastroConfirmarSenha);
-        cadastroPlaca = (EditText)findViewById(R.id.cadastroPlaca);
-        cadastroModelo = (EditText)findViewById(R.id.cadastroModelo);
-        cadastroVeiculo = (TextView)findViewById(R.id.cadastroVeiculo);
-        cadastroCarro = (RadioButton)findViewById(R.id.cadastroCarro);
-        cadastroMoto = (RadioButton)findViewById(R.id.cadastroMoto);
-        btCadastrar = (Button)findViewById(R.id.btCadastrar);
-        btCancelar = (Button)findViewById(R.id.btCancelar);
+        cadastroNome = (EditText) findViewById(R.id.cadastroNome);
+        cadastroEmail = (EditText) findViewById(R.id.cadastroEmail);
+        cadastroCelular = (EditText) findViewById(R.id.cadastroCelular);
+        cadastroSenha = (EditText) findViewById(R.id.cadastroSenha);
+        cadastroConfirmarSenha = (EditText) findViewById(R.id.cadastroConfirmarSenha);
+        cadastroPlaca = (EditText) findViewById(R.id.cadastroPlaca);
+        cadastroModelo = (EditText) findViewById(R.id.cadastroModelo);
+        cadastroVeiculo = (TextView) findViewById(R.id.cadastroVeiculo);
+        cadastroCarro = (RadioButton) findViewById(R.id.cadastroCarro);
+        cadastroMoto = (RadioButton) findViewById(R.id.cadastroMoto);
+        btCadastrar = (Button) findViewById(R.id.btCadastrar);
+        btCancelar = (Button) findViewById(R.id.btCancelar);
+        group = (RadioGroup)findViewById(R.id.group);
+
+
 
         btCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent abreTelaPrincipal = new Intent(TelaCadastro.this,TelaPrincipal.class);
+                Intent abreTelaPrincipal = new Intent(TelaCadastro.this, TelaPrincipal.class);
                 startActivity(abreTelaPrincipal);
             }
         });
 
-        /*Tentei alterar o nome da barra de título
-        final boolean customTitleSupported = requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
-
-        setContentView(R.layout.main);
-
-
-        if ( customTitleSupported ) {
-            getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.titlebar);
-        }
-
-        final TextView myTitleText = (TextView) findViewById(R.id.myTitle);
-        if ( myTitleText != null ) {
-            myTitleText.setText("NEW TITLE");
-        }
-        */
         btCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,5 +55,14 @@ public class TelaCadastro extends AppCompatActivity {
                 startActivity(abreTelaLogin);
             }
         });
+
+
+    }
+//Sempre que for determinar uma ação do RadioButton é necessário ter incluído no layout o RadioGroup
+    public void rbclick(View v) {
+        int radioButtonId = group.getCheckedRadioButtonId();
+        cadastroMoto = (RadioButton)findViewById(radioButtonId);
+        cadastroCarro = (RadioButton)findViewById(radioButtonId);
+
     }
 }

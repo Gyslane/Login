@@ -25,15 +25,6 @@
         android:textColor="@color/colorFontLogin"
         android:buttonTint="#DD2C00" />
 
-    <RadioButton
-        android:id="@+id/not"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.13"
-        android:text="Não"
-        android:textColor="@color/colorFontLogin"
-        android:buttonTint="#DD2C00" />
-
     <Button
         android:id="@+id/btExcluir"
         android:layout_width="match_parent"

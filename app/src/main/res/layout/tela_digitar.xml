@@ -32,6 +32,7 @@
             android:ems="10"
             android:hint="Digite aqui"
             android:inputType="textPersonName"
+            android:maxLength="7"
             android:textColor="@color/colorFontLogin"
             android:textColorHint="@color/colorFontLogin" />
 

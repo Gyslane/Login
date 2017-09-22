@@ -14,6 +14,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Nome Completo"
+        android:digits="abcdefghijklmnopqrstuvxwyz"
         android:textColorHint="@color/colorFontLogin"
         android:textColor="@color/colorFontLogin"/>
 
@@ -28,12 +29,25 @@
         android:textColor="@color/colorFontLogin"/>
 
     <EditText
+        android:id="@+id/phonealt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Celular"
+        android:inputType="phone"
+        android:digits="0123456789"
+        android:maxLength="9"
+        android:textColor="@color/colorFontLogin"
+        android:textColorHint="@color/colorFontLogin" />
+
+    <EditText
         android:id="@+id/passwordalt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Senha"
         android:inputType="numberPassword"
+        android:maxLength="8"
         android:textColorHint="@color/colorFontLogin"
         android:textColor="@color/colorFontLogin"/>
 
@@ -44,18 +58,14 @@
         android:ems="10"
         android:hint="Confirmação de Senha"
         android:inputType="numberPassword"
+        android:maxLength="8"
         android:textColorHint="@color/colorFontLogin"
         android:textColor="@color/colorFontLogin"/>
 
-    <EditText
-        android:id="@+id/phonealt"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="phone"
-        android:hint="Celular"
-        android:textColorHint="@color/colorFontLogin"
-        android:textColor="@color/colorFontLogin"/>
+        android:layout_height="55dp"
+        android:orientation="horizontal"></LinearLayout>
 
     <Button
         android:id="@+id/alterar"

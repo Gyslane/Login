@@ -15,6 +15,7 @@
         android:ems="10"
         android:hint="Nome Completo"
         android:inputType="textPersonName"
+        android:digits="abcdefghijklmnopqrstuvxwyz"
         android:textColorHint="@color/colorFontLogin"
         android:textColor="@color/colorFontLogin"/>
 
@@ -35,6 +36,8 @@
         android:ems="10"
         android:hint="Celular"
         android:inputType="phone"
+        android:digits="0123456789"
+        android:maxLength="9"
         android:textColorHint="@color/colorFontLogin"
         android:textColor="@color/colorFontLogin"/>
 
@@ -45,6 +48,7 @@
         android:ems="10"
         android:hint="Senha"
         android:inputType="numberPassword"
+        android:maxLength="8"
         android:textColorHint="@color/colorFontLogin"
         android:textColor="@color/colorFontLogin"/>
 
@@ -55,6 +59,7 @@
         android:ems="10"
         android:hint="Confirmar Senha"
         android:inputType="numberPassword"
+        android:maxLength="8"
         android:textColorHint="@color/colorFontLogin"
         android:textColor="@color/colorFontLogin"/>
 
@@ -69,23 +74,31 @@
         android:textColorHint="@color/colorFontLogin"
         android:textColor="@color/colorFontLogin"/>
 
-    <RadioButton
-        android:id="@+id/cadastroCarro"
+    <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Carro"
-        android:textColorHint="@color/colorFontLogin"
-        android:textColor="@color/colorFontLogin"
-        android:buttonTint="#DD2C00"/>
+        android:layout_height="106dp"
+        android:id="@+id/group">
 
-    <RadioButton
-        android:id="@+id/cadastroMoto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Moto"
-        android:textColorHint="@color/colorFontLogin"
-        android:textColor="@color/colorFontLogin"
-        android:buttonTint="#DD2C00"/>
+        <RadioButton
+            android:id="@+id/cadastroMoto"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:buttonTint="#DD2C00"
+            android:hint="Moto"
+            android:onClick="rbclick"
+            android:textColor="@color/colorFontLogin"
+            android:textColorHint="@color/colorFontLogin" />
+
+        <RadioButton
+            android:id="@+id/cadastroCarro"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:buttonTint="#DD2C00"
+            android:hint="Carro"
+            android:onClick="rbclick"
+            android:textColor="@color/colorFontLogin"
+            android:textColorHint="@color/colorFontLogin" />
+    </RadioGroup>
 
     <EditText
         android:id="@+id/cadastroPlaca"
@@ -94,6 +107,7 @@
         android:ems="10"
         android:hint="Placa"
         android:inputType="textPersonName"
+        android:maxLength="7"
         android:textColorHint="@color/colorFontLogin"
         android:textColor="@color/colorFontLogin"/>
 

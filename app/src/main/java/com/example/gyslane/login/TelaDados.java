@@ -95,10 +95,6 @@ public class TelaDados extends AppCompatActivity {
         String nome = (String) sp.getSelectedItem();
         long id = sp.getSelectedItemId();
         int posicao = sp.getSelectedItemPosition();
-
-
-        //Toast.makeText(this, "Mensagem: "+nome+" -> Id: "+id+"-> Posicao", Toast.LENGTH_SHORT).show();
-
     }
 
     public void ok(View view){

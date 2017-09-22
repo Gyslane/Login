@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class TelaAlteraDados extends AppCompatActivity {
     EditText nmalt, emailalt, passwordalt, confirmdalt, phonealt;
@@ -37,6 +38,16 @@ public class TelaAlteraDados extends AppCompatActivity {
             public void onClick(View v) {
                 Intent abreTelaConfiguracao = new Intent(TelaAlteraDados.this, TelaConfiguracao.class);
                 startActivity(abreTelaConfiguracao);
+            }
+        });
+
+        alterar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent abreTelaConfiguracao = new Intent(TelaAlteraDados.this, TelaConfiguracao.class);
+                startActivity(abreTelaConfiguracao);
+                Toast.makeText(TelaAlteraDados.this, "Dados alterados com sucesso!", Toast.LENGTH_SHORT).show();
+
             }
         });
     }
