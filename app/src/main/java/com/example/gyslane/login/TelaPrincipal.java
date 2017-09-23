@@ -45,7 +45,7 @@ public class TelaPrincipal extends AppCompatActivity {
         imagemDigitar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent abreTelaDigitar = new Intent(TelaPrincipal.this,TelaDigitar.class);
+                Intent abreTelaDigitar = new Intent(TelaPrincipal.this,TelaPlaca.class);
                 startActivity(abreTelaDigitar);
             }
         });

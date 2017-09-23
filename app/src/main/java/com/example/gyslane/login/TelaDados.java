@@ -59,7 +59,7 @@ public class TelaDados extends AppCompatActivity {
             }
         });
 
-        Intent intent = getIntent();
+        /*Intent intent = getIntent();
         if(intent != null){
             Bundle params = intent.getExtras();
             if(params != null){
@@ -69,7 +69,7 @@ public class TelaDados extends AppCompatActivity {
 
                 placa.setText("Placa: "+informarPlaca);
             }
-        }
+        }*/
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, mansagens);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

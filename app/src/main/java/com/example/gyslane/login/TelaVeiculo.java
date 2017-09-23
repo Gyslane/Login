@@ -16,7 +16,7 @@ public class TelaVeiculo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tela_vehicle);
+        setContentView(R.layout.tela_veiculo1);
 
         model = (CheckBox) findViewById(R.id.model);
         category = (CheckBox) findViewById(R.id.category);
