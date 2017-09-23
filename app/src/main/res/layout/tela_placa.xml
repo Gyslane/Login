@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.10"
-            android:text="Digite a placa:"
+            android:text="DIGITE A PLACA:"
             android:textAlignment="center"
             android:textColor="@color/colorFontLogin"
             android:textSize="32sp"/>
@@ -76,13 +76,20 @@
             android:layout_width="340dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="OK" />
+            android:text="OK"
+            android:background="@drawable/button_cadastrar"/>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_weight="0"/>
 
         <Button
             android:id="@+id/btCancelar"
             android:layout_width="340dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Cancelar" />
+            android:text="Cancelar"
+            android:background="@drawable/button_cadastrar"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

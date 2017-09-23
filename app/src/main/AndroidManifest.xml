@@ -58,7 +58,8 @@
         <activity android:name=".TelaAlteraDados" />
         <activity android:name=".TelaApagarConta" />
         <activity android:name=".TelaVeiculo1" />
-        <activity android:name=".TelaPlaca"></activity>
+        <activity android:name=".TelaPlaca" />
+        <activity android:name=".TelaMensagem"></activity>
     </application>
 
 </manifest>

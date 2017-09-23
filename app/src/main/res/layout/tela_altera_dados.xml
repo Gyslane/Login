@@ -5,7 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.gyslane.login.TelaAlteraDados"
-    android:background="@drawable/fundo_padrao">
+    android:background="@drawable/fundo_padrao"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ALTERAR DADOS:"
+        android:textAlignment="center"
+        android:textColor="@color/colorFontLogin"
+        android:textSize="32sp"
+        android:layout_weight="0.17" />
 
     <EditText
         android:id="@+id/nmalt"

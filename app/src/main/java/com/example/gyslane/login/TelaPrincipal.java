@@ -63,7 +63,9 @@ public class TelaPrincipal extends AppCompatActivity {
                         Toast.makeText(TelaPrincipal.this, "Página principal", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_notification:
-                        Toast.makeText(TelaPrincipal.this, "Mensagens", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(TelaPrincipal.this, "Mensagens", Toast.LENGTH_SHORT).show();
+                        Intent abreTelaNotification = new Intent(TelaPrincipal.this,TelaMensagem.class);
+                        startActivity(abreTelaNotification);
                         break;
                 }
                 return true;

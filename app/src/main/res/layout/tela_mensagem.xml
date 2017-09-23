@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.16"
-            android:text="Veículos cadastrados:"
+            android:text="MENSAGENS:"
             android:textAlignment="center"
             android:textColor="@color/colorFontLogin"
             android:textSize="32sp"/>
@@ -29,62 +29,49 @@
         <LinearLayout
             android:layout_width="362dp"
             android:layout_height="96dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="1">
 
             <EditText
                 android:id="@+id/veiculos"
-                android:layout_width="223dp"
+                android:layout_width="match_parent"
                 android:layout_height="69dp"
                 android:ems="10"
-                android:gravity="center"
-                android:hint="Veiculo"
+                android:hint="Mensagem recebida aqui..."
                 android:inputType="textPersonName"
                 android:textColor="@color/colorFontLogin"
                 android:textColorHint="@color/colorFontLogin"
                 android:textSize="20sp" />
 
-            <ImageButton
-                android:id="@+id/imagemAdicionar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@mipmap/ic_add" />
-
-            <ImageButton
-                android:id="@+id/imagemDeletar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@mipmap/ic_delete" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="360dp"
+            android:layout_width="match_parent"
             android:layout_height="97dp"
             android:orientation="horizontal"
-            android:layout_weight="0.17"></LinearLayout>
+            android:layout_weight="0.51">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="0dp"
+                android:layout_height="144dp"
+                android:layout_weight="1"
+                android:text="ALERTA: APÓS RECEBIDA A MENSAGEM, NÃO SE DIRIGIR SOZINHO (A) AO VEÍCULO. ANTES DE CHEGAR NO VEICULO VERIFIQUE SE REALMENTE A MENSAGEM CONFERE. FIQUE ATENTO!!!"
+                android:textColor="@color/colorFontLogin"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="369dp" />
+
+        </LinearLayout>
 
         <Button
-            android:id="@+id/btCadastrar"
+            android:id="@+id/btVoltar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.04"
-            android:text="Cadastrar"
-            android:background="@drawable/button_cadastrar"/>
-
-        <View
-            android:layout_width="5dp"
-            android:layout_height="5dp"
-            android:layout_weight="0"/>
-
-        <Button
-            android:id="@+id/btCancelar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.04"
-            android:text="Cancelar"
-            android:background="@drawable/button_cadastrar"/>
+            android:text="Voltar"
+            android:background="@drawable/button_cadastrar" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
