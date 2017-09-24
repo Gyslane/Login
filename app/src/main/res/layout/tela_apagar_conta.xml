@@ -35,8 +35,9 @@
 
     <Button
         android:id="@+id/excluir"
-        android:layout_width="match_parent"
+        android:layout_width="340dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="Excluir"
         android:background="@drawable/button_cadastrar" />
 
@@ -47,8 +48,9 @@
 
     <Button
         android:id="@+id/exit"
-        android:layout_width="match_parent"
+        android:layout_width="340dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="Sair"
         android:background="@drawable/button_cadastrar" />
 

@@ -27,9 +27,10 @@
 
     <Button
         android:id="@+id/btExcluir"
-        android:layout_width="match_parent"
+        android:layout_width="340dp"
         android:layout_height="0dp"
         android:layout_weight="0.13"
+        android:layout_gravity="center"
         android:text="Excluir" />
 
     <View
@@ -39,9 +40,10 @@
 
     <Button
         android:id="@+id/btExit"
-        android:layout_width="match_parent"
+        android:layout_width="340dp"
         android:layout_height="0dp"
         android:layout_weight="0.13"
+        android:layout_gravity="center"
         android:text="sair" />
 
 </LinearLayout>

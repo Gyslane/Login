@@ -58,7 +58,7 @@
                 android:layout_width="143dp"
                 android:layout_height="70dp"
                 android:ems="10"
-                android:inputType="numberPassword"
+                android:inputType="number"
                 android:text=""
                 android:background="#FFFFFF"
                 android:layout_gravity="center"

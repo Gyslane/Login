@@ -67,7 +67,7 @@
 
         <Button
             android:id="@+id/btCadastrar"
-            android:layout_width="355dp"
+            android:layout_width="340dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="0.04"
@@ -81,7 +81,7 @@
 
         <Button
             android:id="@+id/btCancelar"
-            android:layout_width="355dp"
+            android:layout_width="340dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="0.04"
