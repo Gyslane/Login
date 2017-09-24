@@ -58,7 +58,9 @@
                 android:layout_height="144dp"
                 android:layout_weight="1"
                 android:text="ALERTA: APÓS RECEBIDA A MENSAGEM, NÃO SE DIRIGIR SOZINHO (A) AO VEÍCULO. ANTES DE CHEGAR NO VEICULO VERIFIQUE SE REALMENTE A MENSAGEM CONFERE. FIQUE ATENTO!!!"
+                android:textStyle="bold"
                 android:textColor="@color/colorFontLogin"
+                android:background="#FF0000"
                 android:textSize="18dp"
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="369dp" />
@@ -67,8 +69,9 @@
 
         <Button
             android:id="@+id/btVoltar"
-            android:layout_width="match_parent"
+            android:layout_width="355dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_weight="0.04"
             android:text="Voltar"
             android:background="@drawable/button_cadastrar" />

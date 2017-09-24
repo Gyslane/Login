@@ -8,14 +8,14 @@
     tools:context="com.example.gyslane.login.TelaCadastro"
     android:background="@drawable/fundo_padrao">
 
-    <TextView
+    <!-- <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="CADASTRO:"
         android:textAlignment="center"
         android:textColor="@color/colorFontLogin"
-        android:textSize="32sp"/>
+        android:textSize="32sp"/> -->
 
     <EditText
         android:id="@+id/cadastroNome"

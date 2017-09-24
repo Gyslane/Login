@@ -9,17 +9,17 @@ import android.widget.Toast;
 
 public class TelaApagarConta extends AppCompatActivity {
 
-    Button exit, excluir;
+    Button btExit, btExcluir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_apagar_conta);
 
-        exit = (Button)findViewById(R.id.exit);
-        excluir = (Button)findViewById(R.id.excluir);
+        btExit = (Button)findViewById(R.id.exit);
+        btExcluir = (Button)findViewById(R.id.excluir);
 
-        exit.setOnClickListener(new View.OnClickListener() {
+        btExit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent abreTelaConfiguracao = new Intent(TelaApagarConta.this, TelaConfiguracao.class);
@@ -27,7 +27,7 @@ public class TelaApagarConta extends AppCompatActivity {
             }
         });
 
-        excluir.setOnClickListener(new View.OnClickListener() {
+        btExcluir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent abreTelaConfiguracao = new Intent(TelaApagarConta.this, TelaConfiguracao.class);

@@ -56,13 +56,19 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="ENVIAR"
-            />
+            android:background="@drawable/button_cadastrar" />
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_weight="0"/>
 
         <Button
             android:id="@+id/btCancelar"
             android:layout_width="340dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="CANCELAR" />
+            android:text="CANCELAR"
+            android:background="@drawable/button_cadastrar"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
